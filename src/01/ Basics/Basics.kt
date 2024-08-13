@@ -1,4 +1,4 @@
-
+package `01`.` Basics`
 
 import kotlin.io.readlnOrNull//In Kotlin main function is the entry point for regular console programs
 import kotlin.io.readLine
@@ -38,7 +38,7 @@ fun authorisePayment():Unit{
 fun fileComplaint():Unit{
    println("Service is currently unavailable \n1. Go back 2. \n2. Exit" )
    choice = readlnOrNull()?.toInt()
-   if(choice==1){
+   if(choice ==1){
     inAppMenu()
    }
    else{
@@ -72,8 +72,8 @@ val username = readlnOrNull()?.toLong()
 if(username != null){
     println("Hello user with $username, welcome to your account")
     inAppMenu()
-    attempt+=1
-    if(attempt==3){
+    attempt +=1
+    if(attempt ==3){
         println("You have exceeded the number of attempts")
         exit()
     }
